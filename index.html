@@ -1,1 +1,53 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CEINCO - Funcional</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            color: #007bff; /* Un azul bonito */
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .version {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 ¡API CEINCO está funcionando correctamente! 🎉</h1>
+        <p>Este es el backend de nuestra aplicación. Puedes acceder a los servicios de la API a través de los endpoints correspondientes.</p>
+        <p class="version">Versión de la API: 1.0.0</p>
+        <p>Si eres desarrollador, consulta la documentación para más detalles.</p>
+    </div>
+</body>
+</html>
