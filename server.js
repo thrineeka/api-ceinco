@@ -40,6 +40,15 @@ const colors = {
 app.use(cors());
 app.use(express.json());
 
+
+
+
+app.get('/', (req, res) => {
+    console.log(`${colors.green}Solicitud GET / recibida. Sirviendo la página de bienvenida HTML.${colors.reset}`);
+    res.sendFile(__dirname + '/index.html'); // Esto servirá el index.html que creaste
+});
+
+
 const dbConfig = {
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
